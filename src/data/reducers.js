@@ -1,4 +1,4 @@
-import { CREATE_TODO, REMOVE_TODO, MARK_TODO_AS_COMPLETED } from './actions'
+import { CREATE_TODO, REMOVE_TODO, MARK_TODO_AS_COMPLETED } from '../../data/actions'
 
 export const todos = (state = [], action) => {
     const { type, payload } = action;
