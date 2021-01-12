@@ -12,7 +12,7 @@ import {
 import { 
     getTodos, 
     getTodosLoading,
-    getCompleteTodos,
+    getCompletedTodos,
     getIncompleteTodos
 } from '../../data/selectors'
 
@@ -59,7 +59,7 @@ const TodoList = ({
 
 const mapStateToProps = state => ({
     todos: getTodos(state),
-    completedTodos: getCompleteTodos(state),
+    completedTodos: getCompletedTodos(state),
     inCompleteTodos: getIncompleteTodos(state),
     isLoading: getTodosLoading(state),
 });
